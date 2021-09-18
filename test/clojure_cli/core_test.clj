@@ -1,4 +1,4 @@
-(ns clojure-template.core-test
+(ns clojure-cli.core-test
   (:require [clojure.test :refer :all]
             [clojure-template.core :refer :all]))
 

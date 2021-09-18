@@ -1,7 +1,7 @@
-* Clojure Template
+* Clojure CLI
 
 
 [[../../actions/workflows/build.yml/badge.svg]]
 
 
-A simple clojure project template.
+A simple clojure cli project template.
