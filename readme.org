@@ -1,0 +1,7 @@
+* Clojure Template
+
+
+[[../../actions/workflows/build.yml/badge.svg]]
+
+
+A simple clojure project template.
