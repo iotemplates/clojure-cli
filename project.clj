@@ -7,7 +7,14 @@
             :key "apache-2.0"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/tools.cli "1.0.206"]]
+  :plugins [[io.taylorwood/lein-native-image "0.3.1"]]
   :main ^:skip-aot clojure-cli.core
   :target-path "target/%s"
+  :native-image {:jvm-opts ["-Dclojure.compiler.direct-linking=true"]
+                 :opts ["--report-unsupported-elements-at-runtime" ;; ignore native-image build errors
+                        "--initialize-at-build-time"
+                        "--no-server" ;; TODO issue with subsequent builds failing on same server
+                        "--verbose"]
+                 :name "clojure-cli"}
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})

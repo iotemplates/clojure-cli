@@ -5,3 +5,32 @@
 
 
 A simple clojure cli project template.
+
+The cli app demonstrates simple argument and options handling and also native-image support
+
+** Native Image
+
+*** Building the native image
+
+   To build the native-image:
+
+   #+begin_src sh
+   lein native-image
+   #+end_src
+
+   This requires to have graal vm installed. For example:
+
+   #+begin_src sh
+     sdk install java 21.2.0.0-mandrel
+   #+end_src
+
+*** Running the native image
+
+    The binary can be found under `target/default+uberjar/clojure-cli`
+
+    #+begin_src sh
+      ./target/default+uberjar/clojure-cli -n Jack greet
+    #+end_src
+
+    #+RESULTS:
+    : Hello Jack !
