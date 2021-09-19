@@ -1,3 +1,3 @@
-# Introduction to clojure-template
+# Introduction to clojure-cli
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)

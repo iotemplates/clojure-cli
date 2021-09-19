@@ -1,6 +1,6 @@
 (ns clojure-cli.core-test
   (:require [clojure.test :refer :all]
-            [clojure-template.core :refer :all]))
+            [clojure-cli.core :refer :all]))
 
 (deftest validate-args-test
   (testing "Testing failed"
