@@ -14,9 +14,6 @@
 # 
 name: Build
 
-env:
-  MAVEN_ARGS: -B -e
-
 # We need to set these defaults so that .bashrc is called for each step.
 # This is needed so that sdkman can be properly intialized
 defaults:
@@ -26,7 +23,7 @@ defaults:
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
